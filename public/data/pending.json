@@ -1,3 +1,20 @@
 {
-  "pending": []
+  "pending": [
+    {
+      "_id": "1781132840242-ny4o1a",
+      "_source": "submission",
+      "_submittedAt": "2026-06-10T23:07:20.242Z",
+      "name": "Fairview",
+      "town": "Fairview",
+      "county": "Erie",
+      "sector": "public",
+      "storage": "lockers",
+      "storageDetail": "",
+      "level": "k-12",
+      "effective": "2026",
+      "sourceUrl": "",
+      "notes": "",
+      "submitterEmail": ""
+    }
+  ]
 }
