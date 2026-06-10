@@ -16,7 +16,7 @@
     "react-simple-maps": "^3.0.0"
   },
   "devDependencies": {
-    "@anthropic-ai/sdk": "^0.40.0",
+    "@anthropic-ai/sdk": "^0.104.1",
     "@vitejs/plugin-react": "^4.3.4",
     "vite": "^6.0.7"
   }
