@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { STORAGE_METHODS, SECTORS } from '../lib/storage.js';
 
-const FIELDS = { name: '', town: '', county: '', sector: 'public', storage: 'yondr', level: '', effective: '', sourceUrl: '', notes: '', submitterEmail: '' };
+const FIELDS = { name: '', town: '', county: '', sector: 'public', storage: 'yondr', storageOther: '', level: '', effective: '', sourceUrl: '', notes: '', submitterEmail: '' };
 
 export default function SubmitForm({ onClose }) {
   const [form, setForm] = useState(FIELDS);
@@ -88,12 +88,22 @@ export default function SubmitForm({ onClose }) {
               </label>
               <label>Storage method
                 <select value={form.storage} onChange={set('storage')}>
-                  {STORAGE_METHODS.filter((m) => !['other', 'unknown'].includes(m.key)).map((m) => (
+                  {STORAGE_METHODS.filter((m) => m.key !== 'unknown').map((m) => (
                     <option key={m.key} value={m.key}>{m.label}</option>
                   ))}
                 </select>
               </label>
             </div>
+            {form.storage === 'other' && (
+              <label>Describe the storage method
+                <input
+                  value={form.storageOther}
+                  onChange={set('storageOther')}
+                  placeholder="e.g. phones go in a classroom caddy at the start of each period"
+                  autoFocus
+                />
+              </label>
+            )}
             <div className="form-2col">
               <label>Grade levels
                 <input value={form.level} onChange={set('level')} placeholder="e.g. K-12" />

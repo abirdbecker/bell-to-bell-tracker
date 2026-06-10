@@ -135,6 +135,7 @@ function AdminPanel() {
                     </span>
                     {p.sourceUrl && <a href={p.sourceUrl} target="_blank" rel="noreferrer" className="admin-link">source ↗</a>}
                     {p.attachmentUrl && <a href={p.attachmentUrl} target="_blank" rel="noreferrer" className="admin-link">📎 {p.attachmentName || 'attachment'}</a>}
+                    {p.storageDetail && <p className="admin-notes">Storage: {p.storageDetail}</p>}
                     {p.notes && <p className="admin-notes">{p.notes}</p>}
                   </div>
                   <div className="admin-row-actions">
@@ -289,7 +290,7 @@ function pendingToSchool(p) {
   return {
     id: slugify(p.name), name: p.name, sector: p.sector || 'public', town: p.town || null, county: p.county || null,
     lat: null, lng: null, level: p.level || null, students: null,
-    storage: { category: p.storage || 'unknown', label: methodMeta(p.storage).label, raw: null },
+    storage: { category: p.storage || 'unknown', label: methodMeta(p.storage).label, raw: p.storageDetail || null },
     effective: p.effective || null, year: extractYear(p.effective), notes: p.notes || null,
     links: [
       ...(p.sourceUrl ? [{ kind: 'article', label: 'Source', url: p.sourceUrl }] : []),

@@ -23,6 +23,7 @@ export default async function handler(req, res) {
     county: clamp(b.county, 60),
     sector: clamp(b.sector, 20) || 'public',
     storage: clamp(b.storage, 20) || 'unknown',
+    storageDetail: clamp(b.storageOther, 200),
     level: clamp(b.level, 40),
     effective: clamp(b.effective, 40),
     sourceUrl: /^https?:\/\//.test(b.sourceUrl || '') ? clamp(b.sourceUrl, 400) : '',
