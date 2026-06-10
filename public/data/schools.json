@@ -1,0 +1,914 @@
+{
+  "updatedAt": "2026-06-10",
+  "schools": [
+    {
+      "id": "agnes-irwin-school",
+      "name": "Agnes Irwin School",
+      "sector": "private",
+      "typeRaw": "Private",
+      "town": "Rosemont",
+      "county": "Montgomery",
+      "lng": -75.4364,
+      "lat": 40.2808,
+      "level": "9-12 (HS)",
+      "students": 573,
+      "storage": {
+        "category": "mixed",
+        "label": "Varies by grade/school",
+        "raw": "Lower School: Off and Away\nUpper School: Stored securely by staff for entire school day"
+      },
+      "effective": "2024-2025",
+      "year": 2024,
+      "notes": null,
+      "links": [],
+      "contact": null,
+      "status": "published"
+    },
+    {
+      "id": "baldwin-school",
+      "name": "Baldwin School",
+      "sector": "private",
+      "typeRaw": "Private",
+      "town": "Bryn Mawr",
+      "county": "Montgomery",
+      "lng": -75.37,
+      "lat": 40.22,
+      "level": "9-12 (HS)",
+      "students": 572,
+      "storage": {
+        "category": "mixed",
+        "label": "Varies by grade/school",
+        "raw": "Lower School: Off and Away\nUpper School: In cars or lockers"
+      },
+      "effective": "2024-2025",
+      "year": 2024,
+      "notes": "Phones must be \"off and stored in either their cars or lockers from the moment they step on campus until they leave.\"",
+      "links": [],
+      "contact": null,
+      "status": "published"
+    },
+    {
+      "id": "bradford-area-school-district",
+      "name": "Bradford Area School District",
+      "sector": "public",
+      "typeRaw": "Public",
+      "town": "Bradford",
+      "county": "McKean",
+      "lng": -78.55,
+      "lat": 41.8,
+      "level": "K-12 (All/District-wide)",
+      "students": 2305,
+      "storage": {
+        "category": "lockers",
+        "label": "Stored in lockers",
+        "raw": "In lockers"
+      },
+      "effective": "2025-2026",
+      "year": 2025,
+      "notes": "\"Students must keep their phones off and stored in their lockers or designated areas from the start of the school day until dismissal. Phones will not be allowed in classrooms, hallways, cafeteria or restrooms. If a student needs to contact a parent or guardian, they may do so from the main office. In case of an emergency, parents can reach their child through the school's main office.\"",
+      "links": [
+        {
+          "kind": "article",
+          "label": "School Website + FAQ",
+          "url": "https://www.bradfordareaschools.org/page/basd-electronic-devices-policy"
+        }
+      ],
+      "contact": "Erin Waugaman, Superintendent, (814) 362-3841, 2501",
+      "status": "published"
+    },
+    {
+      "id": "brownsville-area-school-district",
+      "name": "Brownsville Area School District",
+      "sector": "public",
+      "typeRaw": "Public",
+      "town": null,
+      "county": "Fayette",
+      "lng": -79.63,
+      "lat": 39.92,
+      "level": "K-12 (All/District-wide)",
+      "students": 1423,
+      "storage": {
+        "category": "yondr",
+        "label": "Yondr pouches",
+        "raw": "Yondr"
+      },
+      "effective": "2024-2025",
+      "year": 2024,
+      "notes": null,
+      "links": [],
+      "contact": null,
+      "status": "published"
+    },
+    {
+      "id": "cardinal-o-hara-high-school",
+      "name": "Cardinal O'Hara high School",
+      "sector": "catholic",
+      "typeRaw": "Catholic",
+      "town": "Springfield",
+      "county": "Delaware",
+      "lng": -75.4464,
+      "lat": 39.9808,
+      "level": "9-12 (HS)",
+      "students": 829,
+      "storage": {
+        "category": "lockers",
+        "label": "Stored in lockers",
+        "raw": "In lockers"
+      },
+      "effective": "2023-2024",
+      "year": 2023,
+      "notes": null,
+      "links": [
+        {
+          "kind": "policy",
+          "label": "Policy",
+          "url": "https://www.cohs.com/academics/cohs-student-handbook-2024"
+        }
+      ],
+      "contact": null,
+      "status": "published"
+    },
+    {
+      "id": "carlynton-school-district",
+      "name": "Carlynton School District",
+      "sector": "public",
+      "typeRaw": "Public",
+      "town": "Carnegie",
+      "county": "Allegheny",
+      "lng": -80.01,
+      "lat": 40.47,
+      "level": "K-12 (All/District-wide)",
+      "students": 1330,
+      "storage": {
+        "category": "yondr",
+        "label": "Yondr pouches",
+        "raw": "Yondr (HS)"
+      },
+      "effective": "2025-2026",
+      "year": 2025,
+      "notes": "\"This decision is not intended to be punitive. Rather, it reflects our district’s commitment to creating the best possible conditions for learning and personal growth. By reducing the constant pull of digital distractions, we aim to help students: \n\nStay more focused and engaged in the classroom. \nStrengthen face-to-face communication skills. \nExperience improved mental health and reduced social pressure. \"",
+      "links": [
+        {
+          "kind": "article",
+          "label": "Letter to community on district website",
+          "url": "https://jshs.carlynton.net/p/~board/jshs-features/post/yondr-pouches"
+        }
+      ],
+      "contact": null,
+      "status": "published"
+    },
+    {
+      "id": "clairton-city-school-district",
+      "name": "Clairton City School District",
+      "sector": "public",
+      "typeRaw": "Public",
+      "town": "Clairton",
+      "county": "Allegheny",
+      "lng": -80.0764,
+      "lat": 40.5308,
+      "level": "K-12 (All/District-wide)",
+      "students": 815,
+      "storage": {
+        "category": "staff",
+        "label": "Collected by staff",
+        "raw": "Stored securely by staff for entire school day"
+      },
+      "effective": "2024-2025",
+      "year": 2024,
+      "notes": "At the beginning of each school day, all cell phones are stored securely in homeroom teacher's classroom. Students can retreive their phones at the end of the day.",
+      "links": [
+        {
+          "kind": "article",
+          "label": "Article",
+          "url": "https://archive.ph/Xyp4T"
+        },
+        {
+          "kind": "policy",
+          "label": "Policy",
+          "url": "https://go.boarddocs.com/pa/clai/Board.nsf/goto?open&id=CD3J5V4B8A2F"
+        }
+      ],
+      "contact": "Superintendent Dr. Tamara Allen-Thomas, Phone: 412-233-7090 Ext: *2201",
+      "status": "published"
+    },
+    {
+      "id": "derry-township-school-district",
+      "name": "Derry Township School District",
+      "sector": "public",
+      "typeRaw": "Public",
+      "town": "Hershey",
+      "county": "Dauphin",
+      "lng": -76.79,
+      "lat": 40.37,
+      "level": "K-12 (All/District-wide)",
+      "students": 3154,
+      "storage": {
+        "category": "off_away",
+        "label": "Off and away",
+        "raw": "Off and away"
+      },
+      "effective": "2024-2025",
+      "year": 2024,
+      "notes": "\"One of the things we've seen in research is just one text during a class period can completely derail a students focus for about 20 minutes. When you think about a 40-minute class period and students are receiving 3 notifications an hour that's a pretty distracted kid.\" -Stacy Winslow, Superintendent",
+      "links": [
+        {
+          "kind": "article",
+          "label": "Article",
+          "url": "https://www.wgal.com/article/pennsylvania-derry-township-school-district-cell-phone-ban/62007326"
+        },
+        {
+          "kind": "policy",
+          "label": "Policy",
+          "url": "https://www.hershey.k12.pa.us/school-board/board-policies/electronic-device-policy"
+        }
+      ],
+      "contact": "Superintendent Dr. Stacy Winslow - 717-534-2501 ext. 3204",
+      "status": "published"
+    },
+    {
+      "id": "harrisburg-school-district",
+      "name": "Harrisburg School District",
+      "sector": "public",
+      "typeRaw": "Public",
+      "town": "Harrisburg",
+      "county": "Dauphin",
+      "lng": -76.8564,
+      "lat": 40.4308,
+      "level": "K-12 (All/District-wide)",
+      "students": 6404,
+      "storage": {
+        "category": "yondr",
+        "label": "Yondr pouches",
+        "raw": "Yondr"
+      },
+      "effective": "2025-2026 (Yondr Pilot Program at John Harris HS)",
+      "year": 2025,
+      "notes": "**Initally, middle school had policy where Advisory classes took phones in locked boxes and handed them back out at the end of the day.",
+      "links": [
+        {
+          "kind": "article",
+          "label": "Article",
+          "url": "https://theburgnews.com/around-the-burg/harrisburg-school-district-to-soon-introduce-locked-phone-pouches-to-high-school-students-to-reduce-distraction"
+        }
+      ],
+      "contact": "Acting Superintendent Dr. Marcia Stokes, mstokes@hbgsd.us, 717-703-4300",
+      "status": "published"
+    },
+    {
+      "id": "iroquois-school-district",
+      "name": "Iroquois School District",
+      "sector": "public",
+      "typeRaw": "Public",
+      "town": "Erie",
+      "county": "Erie",
+      "lng": -80.08,
+      "lat": 42.12,
+      "level": "K-12 (All/District-wide)",
+      "students": 1090,
+      "storage": {
+        "category": "lockers",
+        "label": "Stored in lockers",
+        "raw": "In lockers"
+      },
+      "effective": "2015.0",
+      "year": 2015,
+      "notes": "Phones must be placed in students' lockers; students are given detention if caught with a phone.",
+      "links": [
+        {
+          "kind": "article",
+          "label": "Article",
+          "url": "https://www.erienewsnow.com/story/50843804/local-districts-experience-with-phone-ban"
+        }
+      ],
+      "contact": null,
+      "status": "published"
+    },
+    {
+      "id": "lincoln-park-performing-arts-charter-school",
+      "name": "Lincoln Park Performing Arts Charter School",
+      "sector": "charter",
+      "typeRaw": "Charter",
+      "town": "Midland",
+      "county": "Beaver",
+      "lng": -80.4164,
+      "lat": 40.7508,
+      "level": "6-12 (MS & HS)",
+      "students": 702,
+      "storage": {
+        "category": "yondr",
+        "label": "Yondr pouches",
+        "raw": "Yondr"
+      },
+      "effective": "2024-2025",
+      "year": 2024,
+      "notes": "\"We’re proud at LP to be on the forefront of the growing trend toward device-free schools. We’ve partnered with Yondr to provide each LP student with a personal, locking bag to contain their phone during the school day.\"",
+      "links": [
+        {
+          "kind": "policy",
+          "label": "Policy",
+          "url": "https://www.lppacs.org/device-free-policy"
+        }
+      ],
+      "contact": null,
+      "status": "published"
+    },
+    {
+      "id": "mariana-bracetti-academy-charter-school",
+      "name": "Mariana Bracetti Academy Charter School",
+      "sector": "charter",
+      "typeRaw": "Charter",
+      "town": "Philadelphia",
+      "county": "Philadelphia",
+      "lng": -75.13,
+      "lat": 40.0,
+      "level": "6-12 (MS & HS)",
+      "students": 1506,
+      "storage": {
+        "category": "yondr",
+        "label": "Yondr pouches",
+        "raw": "Yondr"
+      },
+      "effective": "2024-2025",
+      "year": 2024,
+      "notes": null,
+      "links": [],
+      "contact": null,
+      "status": "published"
+    },
+    {
+      "id": "mckeesport-area-school-district",
+      "name": "McKeesport Area School District",
+      "sector": "public",
+      "typeRaw": "Public",
+      "town": "McKeesport",
+      "county": "Allegheny",
+      "lng": -79.9995,
+      "lat": 40.3505,
+      "level": "K-12 (All/District-wide)",
+      "students": 3059,
+      "storage": {
+        "category": "yondr",
+        "label": "Yondr pouches",
+        "raw": "Yondr"
+      },
+      "effective": "2024-2025",
+      "year": 2024,
+      "notes": "School board purchased Yondr pouches for HS and MD students in Summer 2024. Has not updated the policy yet, this effort is led by school leaders.",
+      "links": [
+        {
+          "kind": "article",
+          "label": "Article",
+          "url": "https://www.cbsnews.com/pittsburgh/news/mckeesport-area-high-school-to-implement-policy-to-restrict-cell-phone-usage-in-schools/"
+        }
+      ],
+      "contact": "HS Principal Eric Harper: 412-664-3650",
+      "status": "published"
+    },
+    {
+      "id": "millcreek-township-school-district",
+      "name": "Millcreek Township School District",
+      "sector": "public",
+      "typeRaw": "Public",
+      "town": "Millcreek Township",
+      "county": "Erie",
+      "lng": -80.1464,
+      "lat": 42.1808,
+      "level": "K-12 (All/District-wide)",
+      "students": 6400,
+      "storage": {
+        "category": "lockers",
+        "label": "Stored in lockers",
+        "raw": "In lockers"
+      },
+      "effective": "2024-2025",
+      "year": 2024,
+      "notes": "\"My students are so much more engaged. I can do so much more in my classes. Engagement is up. Participation is so much better.\" - McDowell Teacher",
+      "links": [
+        {
+          "kind": "article",
+          "label": "Article",
+          "url": "https://www.goerie.com/story/news/education/2025/01/15/mcdowell-high-cellphone-ban-has-teachers-approval/77693147007/"
+        }
+      ],
+      "contact": "Superintendent of Schools Dr. John Cavanagh. 814.835.5307",
+      "status": "published"
+    },
+    {
+      "id": "monessen-city-school-district",
+      "name": "Monessen City School District",
+      "sector": "public",
+      "typeRaw": "Public",
+      "town": "Monessen",
+      "county": "Westmoreland",
+      "lng": -79.43,
+      "lat": 40.31,
+      "level": "K-12 (All/District-wide)",
+      "students": 660,
+      "storage": {
+        "category": "yondr",
+        "label": "Yondr pouches",
+        "raw": "Yondr"
+      },
+      "effective": "2024-2025",
+      "year": 2024,
+      "notes": "Adopted Yondr pouches district-wide for 2024-25 (~$13k investment). Students lock phones at arrival and unlock at designated stations at dismissal; district reports strong parent support and minimal enforcement issues.",
+      "links": [
+        {
+          "kind": "article",
+          "label": "Mon Valley Independent",
+          "url": "https://www.monvalleyindependent.com/2026/02/27/proposed-cellphone-ban-in-pa-schools-gains-traction/"
+        }
+      ],
+      "contact": "Superintendent’s office: 724-684-3600",
+      "status": "published"
+    },
+    {
+      "id": "montoursville-school-district",
+      "name": "Montoursville School District",
+      "sector": "public",
+      "typeRaw": "Public",
+      "town": "Montoursville",
+      "county": "Lycoming",
+      "lng": -77.1,
+      "lat": 41.34,
+      "level": "K-12 (All/District-wide)",
+      "students": 1709,
+      "storage": {
+        "category": "yondr",
+        "label": "Yondr pouches",
+        "raw": "Yondr"
+      },
+      "effective": "2024-2025",
+      "year": 2024,
+      "notes": "The pouches make enforcement and implementation easier, but consistency across staff is key. Kids are more engaged and staff is happier.",
+      "links": [
+        {
+          "kind": "article",
+          "label": "Article",
+          "url": "https://www.montoursville.k12.pa.us/thearrowhead/2024/10/18/district-locks-in-on-its-new-phone-policy/"
+        },
+        {
+          "kind": "policy",
+          "label": "Policy",
+          "url": "https://go.boarddocs.com/pa/mntv/Board.nsf/goto?open&id=D8DKYV5433C4"
+        }
+      ],
+      "contact": "Superintendent Daniel Taormina 570-368-2491",
+      "status": "published"
+    },
+    {
+      "id": "muhlenberg-school-district",
+      "name": "Muhlenberg School District",
+      "sector": "public",
+      "typeRaw": "Public",
+      "town": "Muhlenberg",
+      "county": "Berks",
+      "lng": -75.92,
+      "lat": 40.42,
+      "level": "K-12 (All/District-wide)",
+      "students": 4361,
+      "storage": {
+        "category": "lockers",
+        "label": "Stored in lockers",
+        "raw": "In lockers"
+      },
+      "effective": "2025-2026",
+      "year": 2025,
+      "notes": "\"Students may not use their phone at ANY time for ANY reason during the school day. Students are expected to keep their phones in their LOCKER.\"",
+      "links": [
+        {
+          "kind": "policy",
+          "label": "Policy",
+          "url": "https://www.muhlsdk12.org/"
+        }
+      ],
+      "contact": null,
+      "status": "published"
+    },
+    {
+      "id": "penn-hills-school-district",
+      "name": "Penn Hills School District",
+      "sector": "public",
+      "typeRaw": "Public",
+      "town": "Pittsburgh",
+      "county": "Allegheny",
+      "lng": -79.9187,
+      "lat": 40.589,
+      "level": "K-12 (All/District-wide)",
+      "students": 3016,
+      "storage": {
+        "category": "staff",
+        "label": "Collected by staff",
+        "raw": "Stored securely by staff for entire school day"
+      },
+      "effective": "2022-2023",
+      "year": 2022,
+      "notes": "At the beginning of each school day, all cell phones must be handed to a designated staff member. Phones are returned to students at the end of their eighth-period class.",
+      "links": [
+        {
+          "kind": "policy",
+          "label": "Policy",
+          "url": "https://phhs.phsd.org/about-us/policies"
+        }
+      ],
+      "contact": "Superintendent Dr. John Mozzocio, (412) 793-7000 x1282",
+      "status": "published"
+    },
+    {
+      "id": "pittsburgh-public-schools",
+      "name": "Pittsburgh Public Schools",
+      "sector": "public",
+      "typeRaw": "Public",
+      "town": "Pittsburgh",
+      "county": "Allegheny",
+      "lng": -80.1872,
+      "lat": 40.4386,
+      "level": "K-12 (All/District-wide)",
+      "students": 18312,
+      "storage": {
+        "category": "mixed",
+        "label": "Varies by grade/school",
+        "raw": "Varies by school"
+      },
+      "effective": "2025-2026",
+      "year": 2025,
+      "notes": "Prohibits \"the use and possession of electronic devices by students during the school day on District property\"",
+      "links": [],
+      "contact": null,
+      "status": "published"
+    },
+    {
+      "id": "radnor-township-school-district",
+      "name": "Radnor Township School District",
+      "sector": "public",
+      "typeRaw": "Public",
+      "town": "Radnor",
+      "county": "Delaware",
+      "lng": -75.38,
+      "lat": 39.92,
+      "level": "K-12 (All/District-wide)",
+      "students": 3616,
+      "storage": {
+        "category": "off_away",
+        "label": "Off and away",
+        "raw": "Off and away"
+      },
+      "effective": "2025-2026",
+      "year": 2025,
+      "notes": "The “Off and Away” initiative directly responds to growing concerns about the impact of cell phones on students’ mental health, social development, and academic engagement. It also builds on the existing success of a similar initiative at Radnor Middle School, extending that philosophy to the high school level.\n\nThis change is grounded in a combination of national research, input from Radnor High School staff surveys, and feedback from parent and student focus groups during the 2024–2025 school year, all reinforcing our shared commitment to student wellbeing.",
+      "links": [
+        {
+          "kind": "article",
+          "label": "FAQ Document",
+          "url": "https://rhs.rtsd.org/student-life/off-and-away-cell-phone-policy-faq"
+        }
+      ],
+      "contact": null,
+      "status": "published"
+    },
+    {
+      "id": "ringgold-school-district",
+      "name": "Ringgold School District",
+      "sector": "public",
+      "typeRaw": "Public",
+      "town": "New Eagle",
+      "county": "Washington",
+      "lng": -80.24,
+      "lat": 40.21,
+      "level": "K-12 (All/District-wide)",
+      "students": 2565,
+      "storage": {
+        "category": "off_away",
+        "label": "Off and away",
+        "raw": "Off and away"
+      },
+      "effective": "2022-2023",
+      "year": 2022,
+      "notes": "Includes cell phones, Air Pods, smartwatches.",
+      "links": [
+        {
+          "kind": "article",
+          "label": "Article",
+          "url": "https://www.cbsnews.com/pittsburgh/news/ringgold-school-district-cell-phone-use-ban/"
+        },
+        {
+          "kind": "policy",
+          "label": "Policy",
+          "url": "https://go.boarddocs.com/pa/ring/Board.nsf/Public?open&id=policies"
+        }
+      ],
+      "contact": "Randall Skrinjorich, Superintendent rskrinjorich@ringgold.org (724) 258-9329",
+      "status": "published"
+    },
+    {
+      "id": "scanton-preparatory-school",
+      "name": "Scanton Preparatory School",
+      "sector": "private",
+      "typeRaw": "Private",
+      "town": "Scranton",
+      "county": "Lackawanna",
+      "lng": -75.6664,
+      "lat": 41.5008,
+      "level": "9-12 (HS)",
+      "students": 662,
+      "storage": {
+        "category": "yondr",
+        "label": "Yondr pouches",
+        "raw": "Yondr"
+      },
+      "effective": "2025-2026",
+      "year": 2025,
+      "notes": null,
+      "links": [
+        {
+          "kind": "article",
+          "label": "Article",
+          "url": "https://www.thetimes-tribune.com/2025/09/28/nepa-schools-take-varying-approaches-to-cellphone-use-in-classrooms/"
+        }
+      ],
+      "contact": null,
+      "status": "published"
+    },
+    {
+      "id": "scranton-city-school-district",
+      "name": "Scranton City School District",
+      "sector": "public",
+      "typeRaw": "Public",
+      "town": "Scranton",
+      "county": "Lackawanna",
+      "lng": -75.6,
+      "lat": 41.44,
+      "level": "K-12 (All/District-wide)",
+      "students": 9237,
+      "storage": {
+        "category": "lockers",
+        "label": "Stored in lockers",
+        "raw": "In lockers"
+      },
+      "effective": "2022-2023",
+      "year": 2022,
+      "notes": "\"Consequently, the Board of Education will supply any electronic equipment or devices necessary for participation in the educational program. Students shall not use or possess any electronic equipment or devices on school property, school bus or at any school-sponsored activity without the permission of the principal, the classroom teacher, or school recognized personnel.\"",
+      "links": [
+        {
+          "kind": "policy",
+          "label": "Policy",
+          "url": "https://4.files.edl.io/7d3e/08/01/22/150205-be07dee4-54b7-498f-b8e0-acf0a364c4e2.pdf"
+        }
+      ],
+      "contact": null,
+      "status": "published"
+    },
+    {
+      "id": "seneca-valley-school-district",
+      "name": "Seneca Valley School District",
+      "sector": "public",
+      "typeRaw": "Public",
+      "town": "Pittsburgh (Jackson Township)",
+      "county": "Butler",
+      "lng": -79.9,
+      "lat": 40.93,
+      "level": "K-12 (All/District-wide)",
+      "students": 7476,
+      "storage": {
+        "category": "off_away",
+        "label": "Off and away",
+        "raw": "Off and away"
+      },
+      "effective": "2025-2026",
+      "year": 2025,
+      "notes": null,
+      "links": [
+        {
+          "kind": "article",
+          "label": "Article",
+          "url": "https://www.cranberryeagle.com/2025/08/29/seneca-valley-school-district-aims-to-tackle-mental-health-issues-with-new-cellphone-policy/"
+        }
+      ],
+      "contact": null,
+      "status": "published"
+    },
+    {
+      "id": "seton-lasalle-high-school",
+      "name": "Seton LaSalle High School",
+      "sector": "catholic",
+      "typeRaw": "Catholic",
+      "town": "Mt. Lebanon",
+      "county": "Allegheny",
+      "lng": -80.1345,
+      "lat": 40.2304,
+      "level": "9-12 (HS)",
+      "students": 410,
+      "storage": {
+        "category": "lockers",
+        "label": "Stored in lockers",
+        "raw": "In lockers"
+      },
+      "effective": "2025-2026",
+      "year": 2025,
+      "notes": null,
+      "links": [],
+      "contact": null,
+      "status": "published"
+    },
+    {
+      "id": "shady-side-academy",
+      "name": "Shady Side Academy",
+      "sector": "private",
+      "typeRaw": "Private",
+      "town": "Pittsburgh",
+      "county": "Allegheny",
+      "lng": -79.7282,
+      "lat": 40.5729,
+      "level": "6-12 (MS & HS)",
+      "students": 1058,
+      "storage": {
+        "category": "yondr",
+        "label": "Yondr pouches",
+        "raw": "Yondr"
+      },
+      "effective": "2025-2026",
+      "year": 2025,
+      "notes": null,
+      "links": [],
+      "contact": null,
+      "status": "published"
+    },
+    {
+      "id": "slippery-rock-area-school-district",
+      "name": "Slippery Rock Area School District",
+      "sector": "public",
+      "typeRaw": "Public",
+      "town": "Slippery Rock",
+      "county": "Butler",
+      "lng": -79.9664,
+      "lat": 40.9908,
+      "level": "K-12 (All/District-wide)",
+      "students": 1898,
+      "storage": {
+        "category": "lockers",
+        "label": "Stored in lockers",
+        "raw": "In lockers"
+      },
+      "effective": "2025-2026",
+      "year": 2025,
+      "notes": "This school year students will not be permitted to have their cell\nphone or other personal communication devices with them during the school day. If these devices are brought to school, they are to be stored in the student’s locker.",
+      "links": [],
+      "contact": null,
+      "status": "published"
+    },
+    {
+      "id": "south-side-area-school-district",
+      "name": "South Side Area School District",
+      "sector": "public",
+      "typeRaw": "Public",
+      "town": "Hookstown",
+      "county": "Beaver",
+      "lng": -80.35,
+      "lat": 40.69,
+      "level": "K-12 (All/District-wide)",
+      "students": 903,
+      "storage": {
+        "category": "mixed",
+        "label": "Varies by grade/school",
+        "raw": "K-6: Prohibited\n7-12: Yondr"
+      },
+      "effective": "2025-2026",
+      "year": 2025,
+      "notes": null,
+      "links": [],
+      "contact": null,
+      "status": "published"
+    },
+    {
+      "id": "sto-rox-school-district",
+      "name": "Sto-Rox School District",
+      "sector": "public",
+      "typeRaw": "Public",
+      "town": "Mckees Rocks and Stowe",
+      "county": "Allegheny",
+      "lng": -79.8328,
+      "lat": 40.3573,
+      "level": "K-12 (All/District-wide)",
+      "students": 994,
+      "storage": {
+        "category": "mixed",
+        "label": "Varies by grade/school",
+        "raw": "K-6: teachers collect in homeroom 7-12: turned off and collected at bag check"
+      },
+      "effective": "2021?",
+      "year": 2021,
+      "notes": "The Board prohibits use of and possession of electronic devices by students during the school day in district buildings; on district property; on district buses and vehicles; during the time students are under the supervision of the district; and in locker rooms, bathrooms, health suites and other changing areas at any time. Students may bring cell phones to school, if necessary, but must turn them in to school personnel while school is in session",
+      "links": [
+        {
+          "kind": "article",
+          "label": "Article and Article",
+          "url": "https://www.kidsburgh.org/this-school-district-is-seeing-major-benefits-to-going-phone-free/"
+        },
+        {
+          "kind": "policy",
+          "label": "Policy",
+          "url": "https://static1.squarespace.com/static/5f8b593a1072b735c2ccf24f/t/669e51d6abc44a56d196b848/1721651671069/SRSD+Student+Handbook+2024-2025+Final+7.22.24.pdf"
+        }
+      ],
+      "contact": "Interim Superintedent\nDr. Erwin Weischedel\n• Phone: ext. 5262\n• Email: eweischedel@srsd.k12.pa.us",
+      "status": "published"
+    },
+    {
+      "id": "washington-school-district",
+      "name": "Washington School District",
+      "sector": "public",
+      "typeRaw": "Public",
+      "town": "Washington",
+      "county": "Washington",
+      "lng": -80.3064,
+      "lat": 40.2708,
+      "level": "K-12 (All/District-wide)",
+      "students": 1446,
+      "storage": {
+        "category": "yondr",
+        "label": "Yondr pouches",
+        "raw": "Yondr"
+      },
+      "effective": "2022-2023",
+      "year": 2022,
+      "notes": "Spoke with Secretary to Prinicipal. Game changer, but needs to be enforced.",
+      "links": [
+        {
+          "kind": "article",
+          "label": "Article",
+          "url": "https://www.observer-reporter.com/news/2022/aug/26/washington-ringgold-districts-ban-cellphone-use-during-school-day/"
+        },
+        {
+          "kind": "policy",
+          "label": "Pg. 15 of Student Handbook",
+          "url": "https://www.washington.k12.pa.us/cms/lib/PA50010844/Centricity/Domain/43/High%20School%20Student%20Handbook%202023-2024.pdf"
+        }
+      ],
+      "contact": "HS Principal Mr. Roylin Petties, 724-223-5080",
+      "status": "published"
+    },
+    {
+      "id": "woodland-hills-school-district",
+      "name": "Woodland Hills School District",
+      "sector": "public",
+      "typeRaw": "Public",
+      "town": "Pittsburgh",
+      "county": "Allegheny",
+      "lng": -80.0723,
+      "lat": 40.7018,
+      "level": "K-12 (All/District-wide)",
+      "students": 3224,
+      "storage": {
+        "category": "staff",
+        "label": "Collected by staff",
+        "raw": "Stored securely by staff for entire school day"
+      },
+      "effective": "2024-2025",
+      "year": 2024,
+      "notes": "Once students pass through security, they place their phones in a container associated with their last class of the day. 2024/2025 updated enforcement of cell phone policy",
+      "links": [
+        {
+          "kind": "article",
+          "label": "Article",
+          "url": "https://triblive.com/local/valley-news-dispatch/western-pa-districts-split-on-students-cellphones-as-schools-across-the-country-add-device-policies/"
+        },
+        {
+          "kind": "policy",
+          "label": "Policy",
+          "url": "https://hs.whsd.net/apps/pages/index.jsp?uREC_ID=4380666&type=d&pREC_ID=2585768"
+        }
+      ],
+      "contact": "Superintendent MALUJO@WHSD.US",
+      "status": "published"
+    },
+    {
+      "id": "wyoming-area-sd",
+      "name": "Wyoming Area SD",
+      "sector": "public",
+      "typeRaw": "Public",
+      "town": "Wilkes-Barre",
+      "county": "Luzerne",
+      "lng": -75.9,
+      "lat": 41.17,
+      "level": "K-12 (All/District-wide)",
+      "students": 2018,
+      "storage": {
+        "category": "yondr",
+        "label": "Yondr pouches",
+        "raw": "Yondr"
+      },
+      "effective": "2025-2026",
+      "year": 2025,
+      "notes": "Have had policy for 6-7 years of no phones seen/heard during instruction. They are in final stages of approving Yondr for next year- off and away all day, 7-12.",
+      "links": [
+        {
+          "kind": "article",
+          "label": "Article",
+          "url": "https://www.citizensvoice.com/2025/01/22/wyoming-area-postpones-vote-on-locking-up-student-cellphones/"
+        }
+      ],
+      "contact": "Superintendent Dr. Jon Pollard, 570-655-2836 ex2455, Jpollard@wyomingarea.org",
+      "status": "published"
+    }
+  ]
+}

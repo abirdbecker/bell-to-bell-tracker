@@ -1,0 +1,42 @@
+name: Weekly Discovery
+
+# Searches the web for new PA bell-to-bell schools and appends candidates to
+# public/data/pending.json for review in /admin. Never publishes directly.
+
+on:
+  schedule:
+    - cron: '0 11 * * 1'  # Mondays 11:00 UTC = 7am ET
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm ci
+
+      - name: Run discovery
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: npm run discover
+
+      - name: Commit new candidates if any
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data/pending.json
+          if git diff --staged --quiet; then
+            echo "No new candidates this week."
+          else
+            git commit -m "Discovery: new bell-to-bell candidates for review $(date -u +%Y-%m-%d)"
+            git pull --rebase origin main
+            git push
+          fi
