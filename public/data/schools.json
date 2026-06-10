@@ -284,6 +284,64 @@
       "status": "published"
     },
     {
+      "sector": "public",
+      "typeRaw": "Public",
+      "town": "Philadelphia",
+      "county": "Philadelphia",
+      "lng": -75.1195,
+      "lat": 39.8805,
+      "level": "9-12 (HS)",
+      "contact": null,
+      "status": "published",
+      "id": "kensington-creative-performing-arts-high-school",
+      "name": "Kensington Creative & Performing Arts High School",
+      "students": 499,
+      "storage": {
+        "category": "yondr",
+        "label": "Yondr pouches",
+        "raw": "Yondr"
+      },
+      "effective": "2025-2026",
+      "year": 2025,
+      "notes": "Phones stay in Yondr pouches from bell to bell under the school’s “Undistracted Learning” policy.",
+      "links": [
+        {
+          "kind": "policy",
+          "label": "School cell phone policy",
+          "url": "https://kcapa.philasd.org/cellphone-policy/"
+        }
+      ]
+    },
+    {
+      "sector": "public",
+      "typeRaw": "Public",
+      "town": "Philadelphia",
+      "county": "Philadelphia",
+      "lng": -75.0387,
+      "lat": 40.119,
+      "level": "9-12 (HS)",
+      "contact": null,
+      "status": "published",
+      "id": "kensington-high-school",
+      "name": "Kensington High School",
+      "students": 458,
+      "storage": {
+        "category": "off_away",
+        "label": "Off and away",
+        "raw": "Complete ban — phones not permitted in the building at any time (in place since 2015)"
+      },
+      "effective": "2015",
+      "year": 2015,
+      "notes": "One of the earliest phone-free high schools in PA: a complete ban on phones in the building, instituted in 2015.",
+      "links": [
+        {
+          "kind": "article",
+          "label": "Philadelphia Inquirer",
+          "url": "https://www.inquirer.com/philly/columnists/ronnie_polaneczky/phone-ban-kensington-high-school-students-rule-corner-stores-20181130.html"
+        }
+      ]
+    },
+    {
       "id": "lincoln-park-performing-arts-charter-school",
       "name": "Lincoln Park Performing Arts Charter School",
       "sector": "charter",
@@ -484,6 +542,35 @@
       ],
       "contact": null,
       "status": "published"
+    },
+    {
+      "sector": "public",
+      "typeRaw": "Public",
+      "town": "Philadelphia",
+      "county": "Philadelphia",
+      "lng": -75.1964,
+      "lat": 40.0608,
+      "level": "9-12 (HS)",
+      "contact": null,
+      "status": "published",
+      "id": "olney-high-school",
+      "name": "Olney High School",
+      "students": 1300,
+      "storage": {
+        "category": "lockers",
+        "label": "Stored in lockers",
+        "raw": "In lockers (district-wide phone-free; switched from Yondr pouches for 2025-26)"
+      },
+      "effective": "2025-2026",
+      "year": 2025,
+      "notes": "Students store phones in assigned lockers for the full school day; the school moved from Yondr pouches to lockers for 2025-26. Part of the School District of Philadelphia phone-free push.",
+      "links": [
+        {
+          "kind": "article",
+          "label": "CBS Philadelphia",
+          "url": "https://www.cbsnews.com/philadelphia/news/olney-high-school-cellphone-lockers/"
+        }
+      ]
     },
     {
       "id": "penn-hills-school-district",
