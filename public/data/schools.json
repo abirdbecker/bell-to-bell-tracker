@@ -231,8 +231,8 @@
       "sector": "public",
       "town": "Erie",
       "county": "Erie",
-      "lat": null,
-      "lng": null,
+      "lat": 42.1152,
+      "lng": -80.0789,
       "level": "All",
       "students": null,
       "storage": {
