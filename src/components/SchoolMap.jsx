@@ -26,7 +26,7 @@ function resolvePins(schools) {
     const rad = 0.06 + 0.03 * n;
     return [lng + rad * Math.cos(ang), lat + rad * Math.sin(ang)];
   };
-  return schools
+  const pins = schools
     .map((s) => {
       let { lng, lat } = s;
       const k = normCounty(s.county);
@@ -39,6 +39,22 @@ function resolvePins(schools) {
       return lng != null && lat != null ? { ...s, lng, lat } : null;
     })
     .filter(Boolean);
+
+  // De-collision: two schools at the same spot (e.g. two schools in one town)
+  // would draw on top of each other — fan duplicates out so each pin is visible.
+  const seen = {};
+  for (const p of pins) {
+    const key = `${p.lng.toFixed(2)},${p.lat.toFixed(2)}`;
+    const n = seen[key] || 0;
+    if (n > 0) {
+      const ang = n * 2.39996;
+      const rad = 0.05 + 0.02 * n;
+      p.lng += rad * Math.cos(ang);
+      p.lat += rad * Math.sin(ang);
+    }
+    seen[key] = n + 1;
+  }
+  return pins;
 }
 
 export default function SchoolMap({ schools, highlightCounty, onCountyClick }) {
