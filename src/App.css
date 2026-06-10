@@ -181,6 +181,7 @@ a { color: var(--forest-mid); }
 .btn-primary:hover { background: var(--forest-mid); }
 .btn-primary:disabled { opacity: 0.6; cursor: default; }
 .form-error { color: var(--red); font-size: 0.88rem; font-weight: 600; }
+.file-ok { color: var(--forest-mid); font-size: 0.85rem; font-weight: 600; }
 .hp-field { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
 .submit-done { text-align: center; }
 .submit-done p { margin: 1rem 0; color: var(--forest-mid); }

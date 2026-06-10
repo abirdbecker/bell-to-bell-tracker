@@ -1,6 +1,7 @@
-import { getFile, putFile } from './_github.js';
+import { getFile, putFile, putBinaryFile } from './_github.js';
 
 const clamp = (v, n) => (typeof v === 'string' ? v.trim().slice(0, n) : '');
+const MAX_PDF_BYTES = 3 * 1024 * 1024; // 3 MB
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
@@ -30,6 +31,25 @@ export default async function handler(req, res) {
   };
 
   try {
+    // Optional PDF attachment (sent as base64 from the form).
+    const att = b.attachment;
+    if (att && att.dataBase64) {
+      const bytes = Math.floor((att.dataBase64.length * 3) / 4);
+      // 'JVBER' is the base64 prefix of '%PDF' — magic-byte check so the public
+      // endpoint can't be used to host arbitrary file types.
+      if (att.type !== 'application/pdf' || !att.dataBase64.startsWith('JVBER')) {
+        return res.status(400).json({ error: 'Attachment must be a PDF.' });
+      }
+      if (bytes > MAX_PDF_BYTES) {
+        return res.status(413).json({ error: 'PDF is too large (max 3 MB).' });
+      }
+      const safe = (att.name || 'policy.pdf').replace(/[^a-zA-Z0-9._-]/g, '_').slice(-50);
+      const path = `public/uploads/submissions/${entry._id}-${safe}`;
+      await putBinaryFile(path, att.dataBase64, `Submission attachment: ${name}`);
+      entry.attachmentUrl = '/' + path.replace(/^public\//, '');
+      entry.attachmentName = att.name || 'policy.pdf';
+    }
+
     const { content } = await getFile('public/data/pending.json');
     const data = content ? JSON.parse(content) : { pending: [] };
     if (!Array.isArray(data.pending)) data.pending = [];

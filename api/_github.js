@@ -34,6 +34,15 @@ export async function getFile(path) {
 }
 
 export async function putFile(path, contentString, message) {
+  return commitContent(path, Buffer.from(contentString, 'utf8').toString('base64'), message);
+}
+
+// Commit already-base64-encoded bytes (for binary uploads like PDFs).
+export async function putBinaryFile(path, base64Content, message) {
+  return commitContent(path, base64Content, message);
+}
+
+async function commitContent(path, base64Content, message) {
   const { token, owner, repo, branch } = cfg();
   const { sha } = await getFile(path);
   const res = await fetch(`${API}/repos/${owner}/${repo}/contents/${path}`, {
@@ -41,7 +50,7 @@ export async function putFile(path, contentString, message) {
     headers: { ...headers(token), 'Content-Type': 'application/json' },
     body: JSON.stringify({
       message,
-      content: Buffer.from(contentString, 'utf8').toString('base64'),
+      content: base64Content,
       branch,
       ...(sha ? { sha } : {}),
       committer: { name: 'b2b-tracker bot', email: 'noreply@paunplugged.org' },
@@ -49,7 +58,7 @@ export async function putFile(path, contentString, message) {
   });
   if (!res.ok) {
     const body = await res.text();
-    throw new Error(`GitHub putFile ${path}: ${res.status} ${body.slice(0, 200)}`);
+    throw new Error(`GitHub commit ${path}: ${res.status} ${body.slice(0, 200)}`);
   }
   return res.json();
 }

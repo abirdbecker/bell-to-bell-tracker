@@ -8,6 +8,8 @@ export default function SubmitForm({ onClose }) {
   const [hp, setHp] = useState(''); // honeypot — real users never fill this
   const [state, setState] = useState('idle'); // idle | sending | done | error
   const [error, setError] = useState('');
+  const [attachment, setAttachment] = useState(null); // { name, type, dataBase64 }
+  const [fileError, setFileError] = useState('');
 
   useEffect(() => {
     const onKey = (e) => e.key === 'Escape' && onClose();
@@ -17,6 +19,18 @@ export default function SubmitForm({ onClose }) {
 
   const set = (k) => (e) => setForm((f) => ({ ...f, [k]: e.target.value }));
 
+  const onFile = (e) => {
+    setFileError('');
+    const f = e.target.files?.[0];
+    if (!f) { setAttachment(null); return; }
+    if (f.type !== 'application/pdf') { setFileError('Please attach a PDF.'); e.target.value = ''; return; }
+    if (f.size > 3 * 1024 * 1024) { setFileError('PDF must be under 3 MB.'); e.target.value = ''; return; }
+    const reader = new FileReader();
+    reader.onload = () => setAttachment({ name: f.name, type: f.type, dataBase64: String(reader.result).split(',')[1] || '' });
+    reader.onerror = () => setFileError('Could not read that file.');
+    reader.readAsDataURL(f);
+  };
+
   const submit = async (e) => {
     e.preventDefault();
     if (!form.name.trim()) { setError('School name is required.'); return; }
@@ -25,7 +39,7 @@ export default function SubmitForm({ onClose }) {
       const res = await fetch('/api/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...form, website: hp }),
+        body: JSON.stringify({ ...form, website: hp, attachment }),
       });
       if (!res.ok) throw new Error((await res.json().catch(() => ({}))).error || `HTTP ${res.status}`);
       setState('done');
@@ -91,6 +105,11 @@ export default function SubmitForm({ onClose }) {
             <label>Source link (article or policy)
               <input type="url" value={form.sourceUrl} onChange={set('sourceUrl')} placeholder="https://…" />
             </label>
+            <label>Attach the policy (optional, PDF up to 3 MB)
+              <input type="file" accept="application/pdf" onChange={onFile} />
+            </label>
+            {attachment && <p className="file-ok">📎 {attachment.name} attached</p>}
+            {fileError && <p className="form-error">{fileError}</p>}
             <label>Notes / policy language
               <textarea rows={3} value={form.notes} onChange={set('notes')} />
             </label>

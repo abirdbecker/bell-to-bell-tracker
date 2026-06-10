@@ -134,6 +134,7 @@ function AdminPanel() {
                       {p._source === 'discovery' ? ' · 🤖 auto-found' : ' · ✉️ submitted'}
                     </span>
                     {p.sourceUrl && <a href={p.sourceUrl} target="_blank" rel="noreferrer" className="admin-link">source ↗</a>}
+                    {p.attachmentUrl && <a href={p.attachmentUrl} target="_blank" rel="noreferrer" className="admin-link">📎 {p.attachmentName || 'attachment'}</a>}
                     {p.notes && <p className="admin-notes">{p.notes}</p>}
                   </div>
                   <div className="admin-row-actions">
@@ -290,6 +291,9 @@ function pendingToSchool(p) {
     lat: null, lng: null, level: p.level || null, students: null,
     storage: { category: p.storage || 'unknown', label: methodMeta(p.storage).label, raw: null },
     effective: p.effective || null, year: extractYear(p.effective), notes: p.notes || null,
-    links: p.sourceUrl ? [{ kind: 'article', label: 'Source', url: p.sourceUrl }] : [], contact: null, status: 'published',
+    links: [
+      ...(p.sourceUrl ? [{ kind: 'article', label: 'Source', url: p.sourceUrl }] : []),
+      ...(p.attachmentUrl ? [{ kind: 'policy', label: p.attachmentName || 'Policy (PDF)', url: p.attachmentUrl }] : []),
+    ], contact: null, status: 'published',
   };
 }
