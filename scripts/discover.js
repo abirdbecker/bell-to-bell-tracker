@@ -86,13 +86,18 @@ For each NEW school you find, capture the official name, town, county, whether i
   let findings = null;
 
   for (let turn = 0; turn < 12 && !findings; turn++) {
-    const res = await client.messages.create({
+    // Stream (not create) — web_search runs a long server-side loop, and a
+    // non-streaming request hits the SDK's HTTP timeout. effort:medium keeps
+    // the weekly run fast and cheap.
+    const stream = client.messages.stream({
       model: 'claude-opus-4-8',
       max_tokens: 16000,
       thinking: { type: 'adaptive' },
+      output_config: { effort: 'medium' },
       tools,
       messages,
     });
+    const res = await stream.finalMessage();
     messages.push({ role: 'assistant', content: res.content });
 
     if (res.stop_reason === 'pause_turn') continue; // server tool loop — resend to resume
