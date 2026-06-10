@@ -72,9 +72,11 @@ async function main() {
   ]);
   const tracked = schoolsData.schools.map((s) => s.name).sort().join(', ');
 
-  const prompt = `You are researching Pennsylvania K-12 schools and school districts that have adopted "bell-to-bell" cell phone policies (phones away from the first bell to the last bell, all day).
+  const prompt = `You are researching Pennsylvania HIGH SCHOOLS (and school districts whose bell-to-bell policy covers their high school) that have adopted "bell-to-bell" cell phone policies (phones away from the first bell to the last bell, all day).
 
-Use web search to find PA schools/districts that adopted or announced such a policy, focusing on the last ~12 months. Prioritize local news coverage and official district announcements/policies.
+IMPORTANT — high schools only: middle-school and elementary phone bans are now near-universal in PA and are NOT of interest. Only report a school or district if the bell-to-bell policy applies to HIGH-SCHOOL students (grades 9–12). Skip any story that is only about a middle-school or elementary policy.
+
+Use web search to find PA high schools/districts that adopted or announced such a policy, focusing on the last ~12 months. Prioritize local news coverage and official district announcements/policies.
 
 We ALREADY track these — do NOT report them again:
 ${tracked}
