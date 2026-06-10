@@ -51,10 +51,10 @@ function Tracker() {
         <div className="law-banner">
           <span className="law-banner-tag">Pending bill</span>
           <p>
-            Similar <strong>bell-to-bell</strong> cell phone legislation has passed both the Pennsylvania{' '}
+            <strong>Bell-to-bell</strong> cell phone legislation has passed both the Pennsylvania{' '}
             <strong>Senate</strong> and <strong>House</strong>, and Gov. Shapiro has called for a bill to
             reach his desk. If enacted, every district would need a phone-free policy by the{' '}
-            <strong>2027–28 school year</strong> — the schools below are already ahead.{' '}
+            <strong>2027–28 school year</strong> — the schools below are leading the charge.{' '}
             <a href="https://whyy.org/articles/pennsylvania-cellphone-ban-schools-k-12/" target="_blank" rel="noopener noreferrer">
               Learn more →
             </a>
