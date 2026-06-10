@@ -226,6 +226,34 @@
       "status": "published"
     },
     {
+      "id": "erie-school-district-erie-s-public-schools",
+      "name": "Erie School District (Erie's Public Schools)",
+      "sector": "public",
+      "town": "Erie",
+      "county": "Erie",
+      "lat": null,
+      "lng": null,
+      "level": "All",
+      "students": null,
+      "storage": {
+        "category": "unknown",
+        "label": "Not specified",
+        "raw": "The district would provide a secure storage system, to be determined, for such devices and principals would enforce the ban. The storage system could include locking pouches, classroom storage units or designated lockers that electronics would be placed in before the first bell or when students enter a school building."
+      },
+      "effective": "2026-2027",
+      "year": 2026,
+      "notes": "The Erie School Board approved a 'bell-to-bell' cell phone policy prohibiting students from using personal electronic devices from the first bell until dismissal, applying to all schools and all grades starting the next school year. Storage method not specified in coverage.",
+      "links": [
+        {
+          "kind": "article",
+          "label": "Source",
+          "url": "https://www.erienewsnow.com/news/erie-school-board-approves-new-dress-code-and-bell-to-bell-cell-phone-policy/article_cb57fbcb-0a40-439f-b851-c65fdc7748f9.html"
+        }
+      ],
+      "contact": null,
+      "status": "published"
+    },
+    {
       "id": "harrisburg-school-district",
       "name": "Harrisburg School District",
       "sector": "public",
@@ -378,7 +406,7 @@
       "town": "Philadelphia",
       "county": "Philadelphia",
       "lng": -75.13,
-      "lat": 40.0,
+      "lat": 40,
       "level": "6-12 (MS & HS)",
       "students": 1506,
       "storage": {
