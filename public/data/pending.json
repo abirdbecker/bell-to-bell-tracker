@@ -1,3 +1,30 @@
 {
-  "pending": []
+  "pending": [
+    {
+      "_id": "1781118407471-csqxkc",
+      "_source": "discovery",
+      "_foundAt": "2026-06-10T19:06:47.471Z",
+      "name": "Erie School District (Erie's Public Schools)",
+      "town": "Erie",
+      "county": "Erie",
+      "sector": "public",
+      "storage": "unknown",
+      "effective": "2026-2027",
+      "sourceUrl": "https://www.erienewsnow.com/news/erie-school-board-approves-new-dress-code-and-bell-to-bell-cell-phone-policy/article_cb57fbcb-0a40-439f-b851-c65fdc7748f9.html",
+      "notes": "The Erie School Board approved a 'bell-to-bell' cell phone policy prohibiting students from using personal electronic devices from the first bell until dismissal, applying to all schools and all grades starting the next school year. Storage method not specified in coverage."
+    },
+    {
+      "_id": "1781118407472-xsusf6",
+      "_source": "discovery",
+      "_foundAt": "2026-06-10T19:06:47.472Z",
+      "name": "Uniontown Area School District",
+      "town": "Uniontown",
+      "county": "Fayette",
+      "sector": "public",
+      "storage": "yondr",
+      "effective": "2025-2026",
+      "sourceUrl": "https://www.observer-reporter.com/news/local_news/2026/feb/14/pa-senate-passes-bell-to-bell-bill-that-would-restrict-students-use-of-cell-phones-in-schools-local-school-have-various-policies/",
+      "notes": "Lafayette Middle School began using grant-funded Yondr lockable pouches in early 2026; phones stay locked through the school day, with teachers carrying magnets to unlock them in emergencies such as evacuations."
+    }
+  ]
 }
