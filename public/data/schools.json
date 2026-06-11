@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-10",
+  "updatedAt": "2026-06-11",
   "schools": [
     {
       "id": "agnes-irwin-school",
@@ -250,6 +250,28 @@
           "url": "https://www.erienewsnow.com/news/erie-school-board-approves-new-dress-code-and-bell-to-bell-cell-phone-policy/article_cb57fbcb-0a40-439f-b851-c65fdc7748f9.html"
         }
       ],
+      "contact": null,
+      "status": "published"
+    },
+    {
+      "id": "fairview",
+      "name": "Fairview School District",
+      "sector": "public",
+      "town": "Fairview",
+      "county": "Erie",
+      "lat": null,
+      "lng": null,
+      "level": "K-12",
+      "students": null,
+      "storage": {
+        "category": "lockers",
+        "label": "Stored in lockers",
+        "raw": null
+      },
+      "effective": "2026",
+      "year": 2026,
+      "notes": null,
+      "links": [],
       "contact": null,
       "status": "published"
     },
@@ -895,6 +917,28 @@
       "status": "published"
     },
     {
+      "id": "southern-york-county-school-district",
+      "name": "Southern York County School District",
+      "sector": "public",
+      "town": "Glen Rock",
+      "county": "York",
+      "lat": null,
+      "lng": null,
+      "level": "K-12",
+      "students": null,
+      "storage": {
+        "category": "off_away",
+        "label": "Off and away",
+        "raw": null
+      },
+      "effective": "2026-2027",
+      "year": 2026,
+      "notes": "In the Southern York County School District, we believe that learning happens best when students are fully present and engaged with their teachers and classmates. That is why all personal electronic devices—including cell phones, smartwatches, earbuds, headphones, tablets, handheld games and any other non-school-issued devices—must remain off and away, all day.\n● “Off” means the device must be completely powered down (not silenced or set to airplane mode).\n● “Away” means the device must be stored out of sight and out of reach in your backpack or locker for the entire school day",
+      "links": [],
+      "contact": null,
+      "status": "published"
+    },
+    {
       "id": "sto-rox-school-district",
       "name": "Sto-Rox School District",
       "sector": "public",
@@ -926,6 +970,28 @@
         }
       ],
       "contact": "Interim Superintedent\nDr. Erwin Weischedel\n• Phone: ext. 5262\n• Email: eweischedel@srsd.k12.pa.us",
+      "status": "published"
+    },
+    {
+      "id": "ellis",
+      "name": "The Ellis School",
+      "sector": "private",
+      "town": "Pittsburgh",
+      "county": "Allegheny",
+      "lat": null,
+      "lng": null,
+      "level": "K-12",
+      "students": null,
+      "storage": {
+        "category": "lockers",
+        "label": "Stored in lockers",
+        "raw": null
+      },
+      "effective": "2025-2026",
+      "year": 2025,
+      "notes": "Phone lockers dedicated to personal devices",
+      "links": [],
+      "contact": null,
       "status": "published"
     },
     {
