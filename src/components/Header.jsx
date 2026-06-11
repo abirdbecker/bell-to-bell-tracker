@@ -13,8 +13,8 @@ export default function Header({ updatedAt, onSubmit }) {
             <span className="header-title-line2">Pennsylvania schools going phone-free</span>
           </h1>
           <p className="header-subtitle">
-            A living map of PA schools and districts with bell-to-bell phone policies — how each
-            one does it, and the policy language to copy.
+            A living map of PA schools and districts with bell-to-bell phone policies — who’s gone
+            phone-free, and how each one does it.
             {updatedAt && <> Updated {formatDate(updatedAt)}.</>}
           </p>
         </div>
