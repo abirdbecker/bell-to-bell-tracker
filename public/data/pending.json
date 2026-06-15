@@ -1,3 +1,17 @@
 {
-  "pending": []
+  "pending": [
+    {
+      "_id": "1781540879226-fzjq53",
+      "_source": "discovery",
+      "_foundAt": "2026-06-15T16:27:59.226Z",
+      "name": "Notre Dame High School (Notre Dame Green Pond)",
+      "town": "Easton (Bethlehem Township)",
+      "county": "Northampton",
+      "sector": "catholic",
+      "storage": "yondr",
+      "effective": "2018-2019",
+      "sourceUrl": "https://www.wfmz.com/news/area/lehighvalley/lehigh-county/allentown-area/local-school-districts-implement-phone-free-policy-with-positive-results-student-cooperation/article_6a0b0b36-b6f5-4f45-b99c-c5468c1d5892.html",
+      "notes": "Catholic high school that has restricted phones since 2018; students lock their phones, earbuds and other devices in Yondr pouches upon arrival and keep them locked until the end of the day (bell-to-bell). Administrators credit it with improved academics, socialization and reduced student stress."
+    }
+  ]
 }
