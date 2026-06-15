@@ -1,11 +1,13 @@
-name: Weekly Discovery
+name: Biweekly Discovery
 
 # Searches the web for new PA bell-to-bell schools and appends candidates to
 # public/data/pending.json for review in /admin. Never publishes directly.
+# Cron fires every Monday, but the discovery step only runs on even ISO weeks
+# (biweekly) to control API cost. workflow_dispatch always runs.
 
 on:
   schedule:
-    - cron: '0 11 * * 1'  # Mondays 11:00 UTC = 7am ET
+    - cron: '0 11 * * 1'  # Mondays 11:00 UTC = 7am ET (gated to even ISO weeks)
   workflow_dispatch: {}
 
 permissions:
@@ -26,7 +28,12 @@ jobs:
       - name: Run discovery
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: npm run discover
+        run: |
+          if [ "${{ github.event_name }}" != "workflow_dispatch" ] && [ $(( $(date -u +%V) % 2 )) -ne 0 ]; then
+            echo "Odd ISO week — skipping discovery (biweekly cadence). Trigger manually to force a run."
+            exit 0
+          fi
+          npm run discover
 
       - name: Commit new candidates if any
         run: |

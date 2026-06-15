@@ -84,7 +84,7 @@ ${tracked}
 For each NEW school you find, capture the official name, town, county, whether it's public/charter/catholic/private, how phones are stored (Yondr pouches / lockers / collected by staff / "off and away" / mixed), the school year it took effect, and a source URL. Only include a school if you have a real, citable source URL. When done, call report_findings exactly once.`;
 
   const messages = [{ role: 'user', content: prompt }];
-  const tools = [{ type: 'web_search_20260209', name: 'web_search' }, REPORT_TOOL];
+  const tools = [{ type: 'web_search_20260209', name: 'web_search', max_uses: 8 }, REPORT_TOOL];
   let findings = null;
 
   for (let turn = 0; turn < 12 && !findings; turn++) {
@@ -92,7 +92,7 @@ For each NEW school you find, capture the official name, town, county, whether i
     // non-streaming request hits the SDK's HTTP timeout. effort:medium keeps
     // the weekly run fast and cheap.
     const stream = client.messages.stream({
-      model: 'claude-opus-4-8',
+      model: 'claude-sonnet-4-6',
       max_tokens: 16000,
       thinking: { type: 'adaptive' },
       output_config: { effort: 'medium' },
