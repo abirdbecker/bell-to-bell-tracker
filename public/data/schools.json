@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-11",
+  "updatedAt": "2026-06-15",
   "schools": [
     {
       "id": "agnes-irwin-school",
@@ -588,6 +588,34 @@
           "kind": "policy",
           "label": "Policy",
           "url": "https://www.muhlsdk12.org/"
+        }
+      ],
+      "contact": null,
+      "status": "published"
+    },
+    {
+      "id": "notre-dame-high-school-notre-dame-green-pond",
+      "name": "Notre Dame High School (Notre Dame Green Pond)",
+      "sector": "catholic",
+      "town": "Easton (Bethlehem Township)",
+      "county": "Northampton",
+      "lat": null,
+      "lng": null,
+      "level": null,
+      "students": null,
+      "storage": {
+        "category": "yondr",
+        "label": "Yondr pouches",
+        "raw": null
+      },
+      "effective": "2018-2019",
+      "year": 2018,
+      "notes": "Catholic high school that has restricted phones since 2018; students lock their phones, earbuds and other devices in Yondr pouches upon arrival and keep them locked until the end of the day (bell-to-bell). Administrators credit it with improved academics, socialization and reduced student stress.",
+      "links": [
+        {
+          "kind": "article",
+          "label": "Source",
+          "url": "https://www.wfmz.com/news/area/lehighvalley/lehigh-county/allentown-area/local-school-districts-implement-phone-free-policy-with-positive-results-student-cooperation/article_6a0b0b36-b6f5-4f45-b99c-c5468c1d5892.html"
         }
       ],
       "contact": null,
